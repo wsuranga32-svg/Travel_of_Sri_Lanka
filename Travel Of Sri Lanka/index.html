@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel of Sri Lanka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+        
+        body { font-family: 'Poppins', sans-serif; }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .vehicle-card {
+            transition: all 0.4s ease;
+        }
+        .vehicle-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px -12px rgb(255 107 0 / 0.3);
+        }
+        
+        .district-pill {
+            transition: all 0.3s ease;
+        }
+        .district-pill:hover {
+            background-color: #ff6b00;
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-800">
+
+    <!-- Top 24/7 Bar -->
+    <div class="bg-gradient-to-r from-orange-600 to-green-600 text-white py-3 text-center font-medium">
+        <p class="flex items-center justify-center gap-3">
+            <i class="fa-solid fa-phone-volume animate-pulse"></i>
+            24 Hours Service • Call or WhatsApp Now
+        </p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="text-4xl">🇱🇰</span>
+                <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-green-600">Travel of Sri Lanka</h1>
+            </div>
+            <a href="https://wa.me/94776093921" target="_blank" 
+               class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-3xl font-semibold flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-2xl"></i> WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6">Welcome to Travel of Sri Lanka</h1>
+            <p class="text-2xl md:text-3xl mb-10 max-w-2xl mx-auto">Comfortable rides across the beautiful island with professional drivers at the lowest rates.</p>
+            <a href="#vehicles" 
+               class="inline-block bg-white text-orange-600 px-10 py-5 rounded-3xl text-xl font-semibold hover:bg-orange-100 transition">View Our Vehicles</a>
+        </div>
+    </section>
+
+    <!-- Vehicles Section -->
+    <section id="vehicles" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-16">Our Vehicle Fleet</h2>
+
+            <!-- Flex Category -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-semibold text-orange-600 mb-8 border-b-4 border-orange-600 inline-block">Flex Category</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="vehicle-card bg-white rounded-3xl overflow-hidden shadow-lg border border-orange-100">
+                        <img src="images/TataNano.png" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold">Tata Nano</h4>
+                            <p class="text-green-600 font-bold text-3xl mt-3">1KM - LKR 90</p>
+                        </div>
+                    </div>
+                    <div class="vehicle-card bg-white rounded-3xl overflow-hidden shadow-lg border border-orange-100">
+                        <img src="images/SuzukiAlto.png" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold">Suzuki Alto</h4>
+                            <p class="text-green-600 font-bold text-3xl mt-3">1KM - LKR 100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mini Category -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-semibold text-emerald-600 mb-8 border-b-4 border-emerald-600 inline-block">Mini Category</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="vehicle-card bg-white rounded-3xl overflow-hidden shadow-lg border border-emerald-100">
+                        <img src="images/SuzukiWagonR.png" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold">Suzuki Wagon R</h4>
+                            <p class="text-green-600 font-bold text-3xl mt-3">1KM - LKR 110</p>
+                        </div>
+                    </div>
+                    <div class="vehicle-card bg-white rounded-3xl overflow-hidden shadow-lg border border-emerald-100">
+                        <img src="images/SuzukiSpacia.png" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold">Suzuki Spacia</h4>
+                            <p class="text-green-600 font-bold text-3xl mt-3">1KM - LKR 110</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sedan Category -->
+            <div class="mb-20">
+                <h3 class="text-3xl font-semibold text-cyan-600 mb-8 border-b-4 border-cyan-600 inline-block">Sedan Category</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="vehicle-card bg-white rounded-3xl overflow-hidden shadow-lg border border-cyan-100">
+                        <img src="images/ToyotaPrius.png" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold">Toyota Prius</h4>
+                            <p class="text-green-600 font-bold text-3xl mt-3">1KM - LKR 120</p>
+                        </div>
+                    </div>
+                    <div class="vehicle-card bg-white rounded-3xl overflow-hidden shadow-lg border border-cyan-100">
+                        <img src="images/ToyotaAxio.png" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold">Toyota Axio</h4>
+                            <p class="text-green-600 font-bold text-3xl mt-3">1KM - LKR 120</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Category -->
+            <div>
+                <h3 class="text-3xl font-semibold text-purple-600 mb-8 border-b-4 border-purple-600 inline-block">Other</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="vehicle-card bg-white rounded-3xl overflow-hidden shadow-lg border border-purple-100">
+                        <img src="images/ToyotaKDH.png" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold">Toyota KDH</h4>
+                            <p class="text-green-600 font-bold text-3xl mt-3">1KM - LKR 180</p>
+                        </div>
+                    </div>
+                    <div class="vehicle-card bg-white rounded-3xl overflow-hidden shadow-lg border border-purple-100">
+                        <img src="images/ToyotaEvery.png" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-semibold">Mini Van (Suzuki Every)</h4>
+                            <p class="text-green-600 font-bold text-3xl mt-3">1KM - LKR 120</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="py-20 bg-gradient-to-br from-orange-50 to-emerald-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-lg">
+                <div class="flex gap-4 items-start">
+                    <i class="fa-solid fa-car text-4xl text-orange-500 mt-1"></i>
+                    <div>Comfortable vehicles with A/C & non A/C options</div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <i class="fa-solid fa-user-tie text-4xl text-emerald-500 mt-1"></i>
+                    <div>Professional & experienced drivers</div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <i class="fa-solid fa-taxi text-4xl text-cyan-500 mt-1"></i>
+                    <div>Taxi / Cab services with driver</div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <i class="fa-solid fa-tags text-4xl text-purple-500 mt-1"></i>
+                    <div>Lowest rates in Sri Lanka</div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <i class="fa-solid fa-clock text-4xl text-amber-500 mt-1"></i>
+                    <div>24 hours service</div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <i class="fa-solid fa-heart text-4xl text-pink-500 mt-1"></i>
+                    <div>Perfect for wedding cars and special tours</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Vehicles Additional -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-12">Our Vehicles</h2>
+            <div class="flex flex-wrap gap-6 justify-center text-center">
+                <div class="bg-white shadow px-8 py-4 rounded-3xl text-lg font-medium">Wedding Car</div>
+                <div class="bg-white shadow px-8 py-4 rounded-3xl text-lg font-medium">Car</div>
+                <div class="bg-white shadow px-8 py-4 rounded-3xl text-lg font-medium">Mini Car</div>
+                <div class="bg-white shadow px-8 py-4 rounded-3xl text-lg font-medium">KDH Van</div>
+                <div class="bg-white shadow px-8 py-4 rounded-3xl text-lg font-medium">Bus</div>
+                <div class="bg-white shadow px-8 py-4 rounded-3xl text-lg font-medium">Dimo Lorry & Full Body Lorry</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Districts -->
+    <section class="py-20 bg-zinc-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-12">Our Service Districts</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Colombo</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Gampaha</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Kalutara</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Kurunegala</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Galle</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Puttalam</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Matara</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Nuwara Eliya</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Kandy</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Matale</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Hambantota</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Anuradhapura</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Polonnaruwa</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Jaffna</div>
+                <div class="district-pill bg-zinc-800 py-6 rounded-3xl font-medium">Batticaloa</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-20 bg-gradient-to-br from-orange-600 to-green-600 text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-12">Contact Us</h2>
+            <div class="max-w-md mx-auto space-y-8 text-xl">
+                <p><strong>Name:</strong> S.N. Weerasinghe</p>
+                <p><strong>Email:</strong> <a href="mailto:wsuranga715@gmail.com" class="underline">wsuranga715@gmail.com</a></p>
+                <p><strong>Telephone:</strong> +94 776 093 921</p>
+                <p><strong>WhatsApp (Message Only):</strong> +94 776 093 921 / +94 773 885 161</p>
+            </div>
+            <a href="https://wa.me/94776093921" target="_blank" 
+               class="mt-12 inline-flex items-center gap-4 bg-white text-orange-600 px-10 py-6 rounded-3xl text-2xl font-bold">
+                <i class="fa-brands fa-whatsapp text-4xl"></i> Message on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900 text-white py-10 text-center">
+        <p>© 2026 Travel of Sri Lanka • Professional & Reliable Service Across Sri Lanka</p>
+    </footer>
+
+    <script>
+        // Simple smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
